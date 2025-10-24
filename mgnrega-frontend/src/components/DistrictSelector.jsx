@@ -23,7 +23,7 @@ const DistrictCard = ({ district, onClick }) => {
       </p>
 
       <p style={{ fontSize: "16px", margin: "5px 0", color: "#2e7d32" }}>
-        <strong>Month:</strong> {district..month || "N/A"}
+        <strong>Month:</strong> {district.month || "N/A"}
       </p>
 
       <p style={{ fontSize: "18px", margin: "5px 0", color: "#1565c0" }}>
