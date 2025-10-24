@@ -9,7 +9,7 @@ export const getMGNREGAData = async (req, res) => {
 
   try {
     // Fetch API data for the specific state
-    const apiUrl = `https://api.data.gov.in/resource/${RESOURCE_ID}?api-key=${API_KEY}&format=json&limit=1000&filters[state_name]=${encodeURIComponent(state)}`;
+    const apiUrl = `https://api.data.gov.in/resource/${RESOURCE_ID}?api-key=${API_KEY}&format=json&limit=10&filters[state_name]=${encodeURIComponent(state)}`;
     const response = await fetch(apiUrl, { headers: { Accept: "application/json" } });
 
     if (!response.ok) {
