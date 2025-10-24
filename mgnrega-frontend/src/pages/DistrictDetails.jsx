@@ -11,7 +11,7 @@ const DistrictDetails = () => {
     const fetchDistrictData = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/api/mgnrega/district/${stateName}/${districtName}`
+          `https://bharat-digital.onrender.com/api/mgnrega/district/${stateName}/${districtName}`
         );
         const result = await res.json();
 

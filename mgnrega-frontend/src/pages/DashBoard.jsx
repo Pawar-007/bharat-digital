@@ -13,7 +13,7 @@ const Dashboard = () => {
   const fetchData = async (selectedState) => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:3000/api/mgnrega?state_name=${selectedState}`);
+      const res = await axios.get(`https://bharat-digital.onrender.com/api/mgnrega?state_name=${selectedState}`);
       console.log("fetched data",res.data);
       setData(res.data?.data || []);
     } catch (err) {
