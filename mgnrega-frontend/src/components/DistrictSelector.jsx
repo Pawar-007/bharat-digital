@@ -19,11 +19,11 @@ const DistrictCard = ({ district, onClick }) => {
       </h2>
 
       <p style={{ fontSize: "16px", margin: "5px 0", color: "#2e7d32" }}>
-        <strong>Financial Year:</strong> {district.raw_data?.fin_year || "N/A"}
+        <strong>Financial Year:</strong> {district.fin_year || "N/A"}
       </p>
 
       <p style={{ fontSize: "16px", margin: "5px 0", color: "#2e7d32" }}>
-        <strong>Month:</strong> {district.raw_data?.month || "N/A"}
+        <strong>Month:</strong> {district..month || "N/A"}
       </p>
 
       <p style={{ fontSize: "18px", margin: "5px 0", color: "#1565c0" }}>
@@ -31,7 +31,7 @@ const DistrictCard = ({ district, onClick }) => {
       </p>
 
       <p style={{ fontSize: "18px", margin: "5px 0", color: "#ff6f00" }}>
-        <strong>Total Households Worked:</strong> {district.raw_data?.Total_Households_Worked?.toLocaleString() || "N/A"}
+        <strong>Total Households Worked:</strong> {district.Total_Households_Worked?.toLocaleString() || "N/A"}
       </p>
 
       <p style={{ fontSize: "16px", margin: "5px 0", color: "#ff6f00" }}>
@@ -47,7 +47,7 @@ const DistrictCard = ({ district, onClick }) => {
 
       {district.raw_data?.Remarks && district.raw_data.Remarks !== "NA" && (
         <p style={{ fontSize: "16px", marginTop: "10px", fontStyle: "italic", color: "#424242" }}>
-          <strong>Remarks:</strong> {district.raw_data.Remarks}
+          <strong>Remarks:</strong> {district.Remarks}
         </p>
       )}
     </div>
